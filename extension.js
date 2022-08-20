@@ -70,14 +70,15 @@ const activateAutoDir = () => {
 }
 
 
-function onload() {
-    setInterval(activateAutoDir, 1000);
-}
+let interval;
 
+function onload() {
+    interval = setInterval(activateAutoDir, 1000);
+}
 
 function onunload() {
+    clearInterval(interval);
 }
-
 
 export default {
     onload: onload,
