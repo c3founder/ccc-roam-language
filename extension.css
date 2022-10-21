@@ -40,8 +40,8 @@
 .multibar-rtl{
     left:unset;
     right:-10px;
-    border-right:unset;
-    border-left:1px solid #BFCCD6
+    border-right:1px solid #BFCCD6;
+    border-left:unset
 }
 
 .multibar-rtl:hover{
